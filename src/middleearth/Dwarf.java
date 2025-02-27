@@ -14,7 +14,7 @@ public class Dwarf extends MiddleEarthCharacter {
 	}
 	/**
 	 * Overrides the parent method of attack from MiddleEarthCharacter
-	 * Implements the attack behavior of elves
+	 * Implements the attack behavior of Dwarfs
 	 * Dwarfs cannot attack their own kin. Wizards or Dwarfs.
 	 * Dwarfs deal 1.5x damage to Elves.
 	 * Normal damage to other targets. 
