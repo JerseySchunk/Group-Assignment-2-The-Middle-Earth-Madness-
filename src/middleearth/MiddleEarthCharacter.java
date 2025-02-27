@@ -1,5 +1,7 @@
 package middleearth;
 
+
+
 public abstract class MiddleEarthCharacter {
 	//Protected variables to encourage inheritance to subclasses
 	protected String name;
@@ -27,4 +29,13 @@ public abstract class MiddleEarthCharacter {
 		System.out.println("Name: " + name + ", Race: " + getRace() + ", Health" + health + "Power: " + power);
 	}
 	
+	public double getHealth() {
+		return health;
+	}
+	
+	
+	
+	public void setHealth(double health) {
+		this.health = health;
+	}
 }
