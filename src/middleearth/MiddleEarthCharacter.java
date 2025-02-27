@@ -21,4 +21,10 @@ public abstract class MiddleEarthCharacter {
 	
 	//Method to be implemented that returns a character's race
 	public abstract String getRace();
+	
+	//Concrete Method: This will print character details
+	public void displayInfo() {
+		System.out.println("Name: " + name + ", Race: " + getRace() + ", Health" + health + "Power: " + power);
+	}
+	
 }
