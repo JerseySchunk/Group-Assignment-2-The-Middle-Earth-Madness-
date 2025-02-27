@@ -61,4 +61,12 @@ public abstract class MiddleEarthCharacter {
 	public void setHealth(double health) {
 		this.health = health;
 	}
+	
+	/**
+	 * GETS the name of the character.
+	 * @return The character's name.
+	 */
+	public String getName() {
+		return name;
+	}
 }
