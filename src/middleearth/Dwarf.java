@@ -21,7 +21,7 @@ public class Dwarf extends MiddleEarthCharacter {
 	 */
 	@Override
 	public boolean attack(MiddleEarthCharacter target) {
-		//Checking if the target is an Elf or Dwarf. If so, returns false.
+		//Checking if the target is an Wizard or Dwarf. If so, returns false.
 		if(target instanceof Wizard || target instanceof Dwarf) {
 			System.out.println(name + "'s attack was ineffective! Cannot harm their own kin!");
 			return false;
