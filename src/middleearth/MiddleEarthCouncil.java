@@ -23,7 +23,7 @@ public class MiddleEarthCouncil {
 	}
 
 	//allows access to CharacterManager
-	public CharacterManager getCharcterManager() {
+	public CharacterManager getCharacterManager() {
 		return characterManager;
 	}
 
