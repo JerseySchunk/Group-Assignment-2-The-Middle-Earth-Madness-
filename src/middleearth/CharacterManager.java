@@ -35,7 +35,20 @@ public class CharacterManager {
         }
         return null;  // Return null
     }
-        
+ // Removes a character from the array
+    public boolean deleteCharacter(MiddleEarthCharacter character) {
+        for (int i = 0; i < size; i++) {
+            if (characters[i] == character) {  // Find the character
+                for (int j = i; j < size - 1; j++) {
+                    characters[j] = characters[j + 1];  // Shift elements to the left
+                }
+                characters[size - 1] = null;  // Set final element to null
+                size--;  // Decrease size
+                return true;  // True
+            }
+        }
+        return false;  // Return false
+    }
         
 
 }
