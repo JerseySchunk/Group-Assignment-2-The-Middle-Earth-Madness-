@@ -12,7 +12,7 @@ public class CharacterManager {
         this.size = 0; // No characters initially
 
     }
- // Adds character to the array
+ // Adds character to array
     public boolean addCharacter(MiddleEarthCharacter c) {
         if (size == capacity) {  // checks size against capacity 
             capacity = capacity * 2;  // Double the capacity
@@ -26,7 +26,15 @@ public class CharacterManager {
         size++;  // Increase size
         return true;
     }
-        
+ // Get a character
+    public MiddleEarthCharacter getCharacter(String name) {
+        for (int i = 0; i < size; i++) {
+            if (characters[i].getName().equals(name)) {
+                return characters[i];  // Return the character
+            }
+        }
+        return null;  // Return null
+    }
         
         
 
