@@ -4,6 +4,7 @@ public class MiddleEarthApp {
 	public static void main(String[] args) {
 		CharacterManager manager = new CharacterManager();
 		Scanner scanner = new Scanner(System.in);
+		
 		boolean quit = false;
 		do {
 			System.out.println("1. Add a new character.");
@@ -37,24 +38,32 @@ public class MiddleEarthApp {
 				switch(race) {
 				case 1:
 					newCharacter = new Dwarf(name, health, power);
+					manager.addCharacter(newCharacter);
 					continue;
 				case 2:
 					newCharacter = new Elf(name, health, power);
+					manager.addCharacter(newCharacter);
 					continue;
 				case 3:
 					newCharacter = new Human(name, health, power);
+					manager.addCharacter(newCharacter);
 					continue;
 				case 4:
 					newCharacter = new Orc(name, health, power);
+					manager.addCharacter(newCharacter);
 					continue;
 				case 5:
 					newCharacter = new Wizard(name, health, power);
+					manager.addCharacter(newCharacter);
 					continue;
 				default:
 					System.out.println("Please enter a valid number");
 					break;
 					
 				}
+			case 2:
+				manager.displayAllCharacters();
+				break;
 			case 6:
 				quit = true;
 				break;
