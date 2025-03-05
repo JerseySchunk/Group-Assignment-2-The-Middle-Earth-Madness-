@@ -61,6 +61,14 @@ public class CharacterManager {
             }
         }
         return false;  // Return false if not found
+        
+    }
+
+    // Displays all characters in the array
+    public void displayAllCharacters() {
+        for (int i = 0; i < size; i++) {
+            characters[i].displayInfo(); 
+        }
     }
 
 }
