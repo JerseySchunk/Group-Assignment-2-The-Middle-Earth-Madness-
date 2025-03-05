@@ -42,7 +42,7 @@ public abstract class MiddleEarthCharacter {
 	 * Displays character information.
 	 */
 	public void displayInfo() {
-		System.out.println("Name: " + name + ", Race: " + getRace() + ", Health" + health + "Power: " + power);
+		System.out.println("Name: " + name + ", Race: " + getRace() + ", Health:" + health + ", Power: " + power);
 	}
 	
 	/**
@@ -68,5 +68,19 @@ public abstract class MiddleEarthCharacter {
 	 */
 	public String getName() {
 		return name;
+
 	}
+
+	public void setPower(double power) {
+		this.power = power;
+		
+	}
+
+	public void setName(String name) {
+		this.name = name;
+		
+	}
+
+	
+
 }

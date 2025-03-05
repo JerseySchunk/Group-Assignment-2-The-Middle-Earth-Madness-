@@ -49,6 +49,18 @@ public class CharacterManager {
         }
         return false;  // Return false
     }
-        
+    
+    // Updates a character's stats
+    public boolean updateCharacter(MiddleEarthCharacter character, String name, double health, double power) {
+        for (int i = 0; i < size; i++) {
+            if (characters[i] == character) {  // If the character is found
+                characters[i].setName(name);  // Update name
+                characters[i].setHealth(health);  // Update health
+                characters[i].setPower(power);  // Update power
+                return true;  // Success
+            }
+        }
+        return false;  // Return false if not found
+    }
 
 }
