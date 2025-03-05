@@ -26,15 +26,7 @@ public class CharacterManager {
         size++;  // Increase size
         return true;
     }
- // Get a character
-    public MiddleEarthCharacter getCharacter(String name) {
-        for (int i = 0; i < size; i++) {
-            if (characters[i].getName().equals(name)) {
-                return characters[i];  // Return the character
-            }
-        }
-        return null;  // Return null
-    }
+
  // Removes a character from the array
     public boolean deleteCharacter(MiddleEarthCharacter character) {
         for (int i = 0; i < size; i++) {
@@ -48,6 +40,15 @@ public class CharacterManager {
             }
         }
         return false;  // Return false
+    }
+    // Get a character
+    public MiddleEarthCharacter getCharacter(String name) {
+        for (int i = 0; i < size; i++) {
+            if (characters[i].getName().equals(name)) {
+                return characters[i];  // Return the character
+            }
+        }
+        return null;  // Return null
     }
     
     // Updates a character's stats
