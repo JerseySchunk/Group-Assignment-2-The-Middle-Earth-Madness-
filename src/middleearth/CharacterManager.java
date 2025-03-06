@@ -43,7 +43,7 @@ public class CharacterManager {
 
     
     /**
-     * this finds a character then deletes a character and then resizes the array to avoid an error.
+     * this finds a character then deletes a character and then resizes the array to avoid an error. 
      * 
      * @param character this is the character to be removed from the array
      * @return this is to show if it has deleted a character or not
