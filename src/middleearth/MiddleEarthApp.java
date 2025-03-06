@@ -21,9 +21,9 @@ public class MiddleEarthApp {
 				System.out.println("Enter the name of the character");
 				String name = scanner.next();
 				System.out.println("Enter a health amount");
-				int health = scanner.nextInt();
+				double health = scanner.nextDouble();
 				System.out.println("Enter a attack power amount");
-				int power = scanner.nextInt();
+				double power = scanner.nextDouble();
 				
 				System.out.println("Please enter a characters race");
 				System.out.println("1. Dwarf.");
@@ -61,9 +61,36 @@ public class MiddleEarthApp {
 					break;
 					
 				}
+				
 			case 2:
 				manager.displayAllCharacters();
 				break;
+				
+			case 3:
+				System.out.println("Enter a characters name to update");
+				manager.displayAllCharacters();
+				String characterName = scanner.next();
+				
+				MiddleEarthCharacter updatedCharacter = manager.getCharacter(characterName);
+				
+				if (updatedCharacter != null) {
+					System.out.println("Change what you want to update");
+					System.out.println("Enter a name");
+					
+					String newName = scanner.next();
+					
+					System.out.println("Enter a health amount");
+					
+					double newHealth = scanner.nextDouble();
+					
+					System.out.println("Enter a attack power amount");
+					
+					double newPower = scanner.nextDouble();
+					
+					manager.updateCharacter(updatedCharacter, newName, newHealth, newPower);
+					break;
+				}
+				
 			case 6:
 				quit = true;
 				break;
