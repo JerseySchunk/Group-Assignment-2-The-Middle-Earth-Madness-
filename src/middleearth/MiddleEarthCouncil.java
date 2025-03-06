@@ -1,11 +1,12 @@
 package middleearth;
 
+/**
+ * Singleton class
+ * Makes sure only one instance of Middle Earth Council can exist
+ */
 public class MiddleEarthCouncil {
 	
-	/**
-	 * Singleton class
-	 * Makes sure only one instance of Middle Earth Council can exist
-	 */
+
 	private static MiddleEarthCouncil instance;
 	
 	//
