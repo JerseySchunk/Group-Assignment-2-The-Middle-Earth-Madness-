@@ -89,7 +89,21 @@ public class MiddleEarthApp {
 					
 					manager.updateCharacter(updatedCharacter, newName, newHealth, newPower);
 					break;
+					
 				}
+			case 4:
+				System.out.println("Enter a characters name to delete");
+				manager.displayAllCharacters();
+				String deletedName = scanner.next();
+
+				MiddleEarthCharacter deletedCharacter = manager.getCharacter(deletedName);
+				if (deletedName != null) {
+					manager.deleteCharacter(deletedCharacter);
+				}
+				else {
+					System.out.println("No Character found with that name");
+				}
+				break;
 				
 			case 6:
 				quit = true;
