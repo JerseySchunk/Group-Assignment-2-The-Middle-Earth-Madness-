@@ -152,6 +152,7 @@ public class MiddleEarthApp {
 				wizard.attack(orc);
 				wizard.attack(elf);
 				manager.displayAllCharacters();
+				break;
 			
 			//exits the applications
 			case 6:
