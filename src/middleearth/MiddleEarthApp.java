@@ -76,15 +76,12 @@ public class MiddleEarthApp {
 				if (updatedCharacter != null) {
 					System.out.println("Change what you want to update");
 					System.out.println("Enter a name");
-					
 					String newName = scanner.next();
-					
+
 					System.out.println("Enter a health amount");
-					
 					double newHealth = scanner.nextDouble();
 					
 					System.out.println("Enter a attack power amount");
-					
 					double newPower = scanner.nextDouble();
 					
 					manager.updateCharacter(updatedCharacter, newName, newHealth, newPower);
@@ -105,9 +102,12 @@ public class MiddleEarthApp {
 				}
 				break;
 				
+			case 5:
+				
 			case 6:
 				quit = true;
 				break;
+				
 				
 				
 			}
